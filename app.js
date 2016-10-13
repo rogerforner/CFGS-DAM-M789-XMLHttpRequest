@@ -1,11 +1,9 @@
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo").innerHTML =
-                this.responseText;
-        }
-    };
-    xhttp.open("GET", "http://localhost:8000/test-file/file.txt", true);
-    xhttp.send();
+function requestGet() {
+    var req = new XMLHttpRequest();
+    req.open('GET', 'http://localhost:8000/test-file/file.txt', false);
+    req.send(null);
+    if (req.status == 200){
+        //console.log(req.responseText);
+        document.getElementById("demo").innerHTML = req.responseText;
+    }
 }

@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+<h1>Prova:</h1>
 <div id="demo">
-    <h1>The XMLHttpRequest Object</h1>
-    <button type="button" onclick="loadDoc()">Request</button>
+    <button type="button" onclick="requestGet()">Request</button>
 </div>
 
 
