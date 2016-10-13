@@ -10,11 +10,12 @@
 <body>
 <h1>Prova:</h1>
 <div id="demo">
-    <button type="button" onclick="requestGetAsin()">Request</button>
+    <button type="button" onclick="requestPDP('POST')">Request</button>
 </div>
 
-<button type="button">Funciona?</button>
-
+<form id ="myFormElement">
+    Text: <input type="text">
+</form>
 <script src="app.js"></script>
 </body>
 </html>

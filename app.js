@@ -21,3 +21,10 @@ function requestGetAsin() {
     };
     req.send(null);
 }
+
+function  requestPDP(type) {
+    var formElement = document.getElementById("myFormElement");
+    var xhr = new XMLHttpRequest();
+    xhr.open(type, "http://localhost:8000/test-file/file.txt");
+    xhr.send(new FormData(formElement));
+}
