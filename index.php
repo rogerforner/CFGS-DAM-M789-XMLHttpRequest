@@ -10,9 +10,10 @@
 <body>
 <h1>Prova:</h1>
 <div id="demo">
-    <button type="button" onclick="requestGet()">Request</button>
+    <button type="button" onclick="requestGetAsin()">Request</button>
 </div>
 
+<button type="button">Funciona?</button>
 
 <script src="app.js"></script>
 </body>
